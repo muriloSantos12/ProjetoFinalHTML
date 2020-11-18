@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home CMY</title>
+    <link rel="stylesheet" href="../static/css/home_style.css">
+
+
+</head>
+
+<style>
+    
+</style>
+
+
+
+
+<body>
+
+
+
+    <div class="div_container" id='div_container'>
+
+        <span class="titulo">
+            <h1>Bem vindo a CMY Sports!</h1>
+        </span>
+        <span class="status_inicial">
+            <h2><b> <span class="status_home">{{ status }}</span></b></h2>
+        </span> <br>
+
+
+        <div class="container_2" id="container_2">
+
+            <br><br>
+
+            <div class="div_cadastrar" id="div_cadastrar">
+                <!-- Formulário de cadastro  -->
+
+                <span id="titulo_cadastro">
+                    <h2>Cadastro</h2>
+                </span>
+
+
+                <form action="cadastrar_produto" method="POST" name="form_cadastrar" class="form_cadastrar">
+                    <label for="cadastrar_produto">Produto ID</label>
+                    <input type="text" id="cadastrar_id" name="cadastrar_id"> <br><br>
+                    <label for="cadastrar_produto">Nome do produto</label>
+                    <input type="text" id="cadastrar_nomeproduto" name="cadastrar_nomeproduto"> <br><br>
+                    <label for="cadastrar_produto">Preço</label>
+                    <input type="text" id="cadastrar_preço" name="cadastrar_preço"> <br><br>
+                    <label for="cadastrar_produto">Categoria</label>
+                    <input type="text" id="cadastrar_categoria" name="cadastrar_categoria"> <br><br>
+
+                    <button type="submit">Cadastrar produto</button>
+
+                </form>
+                <br>
+            </div>
+
+            <br><br>
+
+            <div class="div_consulta" id="div_consulta">
+                <!-- Formulário de consulta   -->
+
+                <span id="titulo_consulta">
+                    <h2>Consultar</h2>
+                </span>
+
+                <form action="consultar_produto" method="POST" name="form_consulta" class="form_consulta">
+                    <label for="consulta_id">Produto ID</label>
+                    <input type="text" id="consulta_id" name="consulta_id">
+
+                    <br><br>
+                    ID: {{ id }} <br><br>
+                    Nome produto: {{ nome }} <br><br>
+                    Preço: {{ preco }} <br><br>
+                    Categoria: {{ categoria }} <br><br>
+                    <button type="submit">Consultar produto</button>
+
+                </form>
+            </div>
+
+            <br><br>
+
+            <div class="div_alterar" id="div_alterar">
+                <!-- Formulário de Alteração  -->
+
+                <span id="titulo_alterar">
+                    <h2>Alterar</h2>
+                </span>
+
+                <form action="alterar_produto" method="POST" name="form_alterar" class="form_alterar">
+                    <label for="alterar_produto">Produto ID</label>
+                    <input type="text" id="alterar_id" name="alterar_id"> <br><br>
+                    <label for="alterar_produto">Nome do produto</label>
+                    <input type="text" id="alterar_nomeproduto" name="alterar_nomeproduto"> <br><br>
+                    <label for="alterar_produto">Preço</label>
+                    <input type="text" id="alterar_preço" name="alterar_preço"> <br><br>
+                    <label for="alterar_produto">Categoria</label>
+                    <input type="text" id="alterar_categoria" name="alterar_categoria"> <br><br>
+
+                    <button type="submit">Alterar produto</button>
+
+                </form>
+            </div>
+
+            <br><br>
+
+            <div class="div_excluir" id="div_excluir">
+                <!-- Formulário de Exclusão  -->
+
+                <span id="titulo_excluir">
+                    <h2>Excluir</h2>
+                </span>
+
+                <form action="excluir_produto" method="POST" name="form_excluir" class="form_excluir">
+                    <label for="excluir_produto">Produto ID</label>
+                    <input type="text" id="excluir_id" name="excluir_id"> <br><br>
+                    <button type="submit">Excluir produto</button>
+
+                </form>
+
+            </div>
+
+
+
+            <br><br>
+            <div class="sair_bot_class">
+                <a href="login"> <button type="submit" class="sair_bot">Sair</button></a>
+            </div>
+            <br>
+        </div>
+
+        <br><br>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

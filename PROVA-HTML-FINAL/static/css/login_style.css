@@ -1,0 +1,90 @@
+.login_bemvindo {
+    text-align: center;
+    color: darkcyan;
+}
+
+.container_2 {
+    width: 45%;
+    height: 78%;
+    background-color: rgb(211, 206, 206);
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: rgb(211, 206, 206);
+}
+
+.div_container {
+    width: auto;
+    height: 900px;
+    background: #e9eaec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.div_login {
+
+    width: 80%;
+    height: 25%;
+    margin: auto;
+    align-items: center;
+    background-color: rgb(197, 194, 194);
+    border-radius: 15px;
+    border: 18px solid rgb(197, 194, 194);
+    font-family: 'Courier New', Courier, monospace;
+    transition: transform .20s
+}
+
+.div_cadastro {
+    width: 80%;
+    height: 30%;
+    margin: auto;
+    align-items: center;
+    background-color: rgb(197, 194, 194);
+    border-radius: 15px;
+    border: 18px solid rgb(197, 194, 194);
+    font-family: 'Courier New', Courier, monospace;
+    transition: transform .20s
+}
+
+.div_login:hover,
+.div_cadastro:hover {
+
+    transform: scale(1.1);
+}
+
+.status_login {
+    color: rgb(196, 19, 19);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+input {
+    color: green;
+    border-radius: 4px;
+    border: 0.05px;
+
+}
+
+button {
+    background-color: darkcyan;
+    color: honeydew;
+    border-radius: 4px;
+    border: 10px;
+    width: auto;
+    height: 35px;
+    cursor: pointer
+}
+
+button:hover {
+    background-color: rgb(3, 56, 56);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#titulologin,
+#titulocadast {
+    color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif
+}

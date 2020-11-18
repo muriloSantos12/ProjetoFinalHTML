@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login CMY</title>
+    <link rel="stylesheet" href="../static/css/login_style.css">
+</head>
+
+<style>
+    
+</style>
+
+<body>
+
+    <div class="div_container" id="div_container">
+
+        <div class="container_2" id="container_2">
+
+            <span class="login_bemvindo">
+                <h1>Autenticação CMY Sports</h1>
+                <h2 class="status_login">{{status_login}}</h2>
+            </span>
+
+
+            <div class="div_login">
+                <!-- Login  -->
+
+                <span class="titulologin" id="titulologin">
+                    <h2>Login</h2>
+                </span>
+                <form action="/login" method="POST" name="login" class="login">
+                    <label for="login_usuario">Usuário</label>
+                    <input type="text" id="login_usuario" name="login_usuario"><br><br>
+                    <label for="login_senha">Senha</label>
+                    <input type="password" id="login_senha" name="login_senha"> <br><br>
+                    <button type="submit">Entrar</button>
+
+                </form>
+
+            </div>
+
+            <br><br><br>
+
+            <div class="div_cadastro">
+                <!-- Cadastre-se  -->
+
+
+
+                <span class="titulocadast" id="titulocadast">
+                    <h2>Cadastre-se</h2>
+                </span>
+
+                <form action="cadastro" method="POST" name="cadastro" class="cadastro">
+                    <label for="cadastro_usuario">Usuário</label>
+                    <input type="text" id="cadastro_usuario" name="cadastro_usuario"> <br><br>
+                    <label for="cadastro_senha">Senha</label>
+                    <input type="password" id="cadastro_senha" name="cadastro_senha"> <br><br>
+                    <label for="confisenha">Confirme sua senha</label>
+                    <input type="password" id="cadastro_confisenha" name="cadastro_confisenha"> <br><br>
+                    <button type="submit">Cadastrar</button>
+
+                    <br><br>
+                </form>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
